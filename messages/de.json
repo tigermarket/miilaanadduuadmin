@@ -1,0 +1,52 @@
+{
+  "Hero": {
+    "title": "Der beste Online-Shop der Welt für Laptops und Macbooks",
+    "ctaButton": "Jetzt kaufen"
+  },
+  "Product": {
+    "title": "Feature-Produkte",
+    "productCardMeta": {
+      "buttonText": "In den Warenkorb"
+    },
+    "addtoCartMessage": "Sie haben erfolgreich hinzugefügt {product} to Karren",
+
+    "data": {
+      "product1": {
+        "title": "Macbook Pro",
+        "price": 1200,
+        "image": "/products/macbook-pro.jpg",
+        "description": "Arbeiten Sie mit dem unglaublich leichten und schnellen Macbook Air 2020 an allem, überall. Der M1-Chip ist ein Game-Changer. Es ist 3,5-mal schneller als das vorherige Macbook Air und verfügt über 8 CPU- und 7 GPU-Kerne, sodass Sie Videobearbeitung und Spiele übernehmen können. Außerdem ist es unglaublich energieeffizient. Mit dem M1 können Sie bis zu 15 Stunden lang surfen oder etwa 18 Stunden lang Apple TV schauen - das ist ein vollständiger Flug von London nach Sydney!"
+      },
+      "product2": {
+        "title": "Iphone 12",
+        "price": 1200,
+        "image": "/products/iphone-blue-12.jpg",
+        "description": "Das Apple iPhone 12 ist vollgepackt mit intelligenten und leistungsstarken Funktionen. Der A14 Bionic-Chip und seine 16-Kern-Neural Engine führen die Show an und werden von keiner App oder keinem Spiel verlangsamt. Von Apple TV bis hin zu E-Mails sieht auf dem 6,1 Super Retina XDR Display alles fantastisch aus."
+      },
+      "product3": {
+        "title": "Apple Gear Lightening Headphone",
+        "price": 800,
+        "image": "/products/gear-lightening-headphones.jpg",
+        "decription": "Du wirst es lieben, wie gut deine Musik mit Apple AirPods Max klingt. Die speziell angefertigten Treiber erzeugen tiefe, satte Bässe, druckvolle Mitten und knackige Höhen, sodass Sie sich in jedem Beat verlieren können. Mit Active Noise Cancelling können Sie all diese lästigen Hintergrundgeräusche ausblenden und Ihre Musik ohne Ablenkung genießen – perfekt für den morgendlichen Zugweg. "
+      },
+      "product4": {
+        "title": "Apple Airpods Black",
+        "price": 120,
+        "image": "/products/apple-airpods-black.webp",
+        "description": "Neu: Ein brandneuer, unbenutzter, ungeöffneter und unbeschädigter Artikel in der Originalverpackung (sofern eine Verpackung vorhanden ist). Wenn der Artikel direkt von einem Hersteller stammt, kann er in einer Verpackung geliefert werden, die nicht für den Einzelhandel bestimmt ist, z. B. in einer einfachen oder unbedruckten Schachtel oder Plastiktüte. Siehe das Angebot des Verkäufers für alle Details."
+      },
+      "product5": {
+        "title": "Apple Airpods Blue",
+        "price": 120,
+        "image": "/products/apple-airpods-blue.webp",
+        "description": "Neu: Ein brandneuer, unbenutzter, ungeöffneter und unbeschädigter Artikel in der Originalverpackung (sofern eine Verpackung vorhanden ist). Wenn der Artikel direkt von einem Hersteller stammt, kann er in einer Verpackung geliefert werden, die nicht für den Einzelhandel bestimmt ist, z. B. in einer einfachen oder unbedruckten Schachtel oder Plastiktüte. Siehe das Angebot des Verkäufers für alle Details."
+      },
+      "product6": {
+        "title": "Laptop Stand",
+        "price": 20,
+        "image": "/products/laptop-stand.png",
+        "description": "Dieser Laptopständer ist in Höhe und Winkel vollständig verstellbar; Sie können die Höhe des Laptop-Bildschirms frei nach oben oder unten erhöhen, um die Ergonomie zu verbessern und Nackenbeschwerden zu reduzieren."
+      }
+    }
+  }
+}

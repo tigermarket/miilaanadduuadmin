@@ -1,0 +1,53 @@
+{
+  "Hero": {
+    "title": "The best world online store for laptops and macbooks",
+    "ctaButton": "Shop Now"
+  },
+
+  "Product": {
+    "title": "All Products",
+    "productCardMeta": {
+      "buttonText": "Add to cart"
+    },
+    "addtoCartMessage": "You have successfully added {product} to cart",
+
+    "data": {
+      "product1": {
+        "title": "Macbook Pro",
+        "price": 1200,
+        "image": "/products/macbook-pro.jpg",
+        "description": "Work on anything, anywhere with the incredibly light and speedy Macbook Air 2020. The M1 chip is a game-changer. It's 3.5x faster than the previous Macbook Air, and packs in 8 CPU and 7 GPU cores so you can take on video-editing and gaming. Plus, it's incredibly power-efficient. The M1 lets you browse for up to 15 hours, or watch Apple TV for around 18 - that's a full flight from London to Sydney!"
+      },
+      "product2": {
+        "title": "Iphone 12",
+        "price": 1200,
+        "image": "/products/iphone-blue-12.jpg",
+        "description": "Apple iPhone 12 is packed with smart and powerful features. The A14 Bionic chip and its 16-core Neural Engine are running the show and they don't get slowed down by any app or game. From Apple TV to emails, everything looks on amazing on the 6.1” Super Retina XDR display."
+      },
+      "product3": {
+        "title": "Apple Gear Lightening Headphone",
+        "price": 800,
+        "image": "/products/gear-lightening-headphones.jpg",
+        "description": "You'll love how good your music sounds with Apple AirPods Max. The custom-built drivers produce deep, rich bass, punchy mids and crisp highs, so you can lose yourself in every beat. With Active Noise Cancelling, you can block out all those annoying background noises and enjoy your tunes without distractions – perfect for the morning train commute. "
+      },
+      "product4": {
+        "title": "Apple Airpods Black",
+        "price": 120,
+        "image": "/products/apple-airpods-black.webp",
+        "description": "New: A brand-new, unused, unopened and undamaged item in original retail packaging (where packaging is applicable). If the item comes direct from a manufacturer, it may be delivered in non-retail packaging, such as a plain or unprinted box or plastic bag. See the seller's listing for full details."
+      },
+      "product5": {
+        "title": "Apple Airpods Blue",
+        "price": 120,
+        "image": "/products/apple-airpods-blue.webp",
+        "description": "You'll love how good your music sounds with Apple AirPods Max. The custom-built drivers produce deep, rich bass, punchy mids and crisp highs, so you can lose yourself in every beat. With Active Noise Cancelling, you can block out all those annoying background noises and enjoy your tunes without distractions – perfect for the morning train commute. "
+      },
+      "product6": {
+        "title": "Laptop Stand",
+        "price": 20,
+        "image": "/products/laptop-stand.png",
+        "description": "This laptop stand is fully adjustable in terms of height and angle; you may elevate the laptop screen height freely up or down for improved ergonomics and to reduce neck discomfort."
+      }
+    }
+  }
+}
