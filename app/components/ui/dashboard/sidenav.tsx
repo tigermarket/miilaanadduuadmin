@@ -2,8 +2,9 @@ import Link from "next/link";
 
 import { PowerIcon } from "@heroicons/react/24/outline";
 // import { signOut } from "@/auth";
-import AcmeLogo from "@/components/ui/acme-logo";
+
 import NavLinks from "@/components/ui/dashboard/navLinks";
+import MiilComLogo from "../miilcomLogo";
 
 export default function SideNav() {
   return (
@@ -13,7 +14,7 @@ export default function SideNav() {
         href="/"
       >
         <div className="w-32 text-white md:w-40">
-          <AcmeLogo />
+          <MiilComLogo />
         </div>
       </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">

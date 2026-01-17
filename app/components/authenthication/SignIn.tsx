@@ -1,77 +1,56 @@
 "use client";
-import Link from "next/link";
-import { Card, Text, useTheme } from "../adduwebui";
-import { useTranslations } from "next-intl";
+
+import { signup } from "@/(server)/controllers/auth";
+import { useActionState, useEffect } from "react";
+import TextInput from "../adduwebui/components/TextInput";
+import { Card, Text } from "../adduwebui";
 
 export default function SignIn() {
-  const theme = useTheme();
-  const t = useTranslations("Hero");
+  const [state, action, pending] = useActionState(signup, undefined);
+
   return (
     <Card>
       <div className="shadow-lg p-8">
-        <Text>{t("title")}</Text>
-        <div className="mb-4 text-center">
-          <Text as="h1" variant="titleLarge" style={{ textAlign: "center" }}>
-            Sign Into Miilaan
+        <div className="items-center mt-2 mb-4">
+          <Text style={{ textAlign: "center" }} variant="titleLarge">
+            Create Miilaan account
           </Text>
         </div>
+        {/* Form */}
+        <form action={action} className="space-y-4 sm:space-y-5">
+          <TextInput
+            label="Name"
+            name="name"
+            placeholder="name"
+            error={state?.errors?.name}
+            errorMessage={state?.errors?.name}
+          />
 
-        <form className="space-y-4">
-          <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
-            >
-              <Text variant="labelLarge">Email</Text>
-            </label>
-            <input
-              type="email"
-              id="email"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
-              placeholder="you@example.com"
-              required
-            />
-          </div>
+          <TextInput
+            label="Email"
+            name="email"
+            placeholder="email"
+            error={state?.errors?.email}
+            errorMessage={state?.errors?.email}
+          />
 
-          <div>
-            <label
-              htmlFor="password"
-              className="block text-sm font-medium text-gray-700"
-            >
-              <Text variant="labelLarge">Password</Text>
-            </label>
-            <input
-              type="password"
-              id="password"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
-              placeholder="••••••••"
-              required
-            />
-          </div>
+          <TextInput
+            label="Password"
+            name="password"
+            placeholder="password"
+            error={state?.errors?.password}
+            errorMessage={state?.errors?.password}
+            type="password"
+          />
 
           <button
+            disabled={pending}
             type="submit"
-            className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 rounded-md transition-colors"
           >
-            Sign In
+            Sign Up
           </button>
         </form>
-
-        <div className="mt-4 text-center">
-          <Link href="#">
-            <Text style={{ color: theme.colors.primary }}>
-              Forgot your password?
-            </Text>
-          </Link>
-        </div>
-        <div className="mt-4 text-center">
-          <button
-            type="submit"
-            className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          >
-            Continue with Google
-          </button>
-        </div>
       </div>
     </Card>
   );

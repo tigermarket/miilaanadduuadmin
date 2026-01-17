@@ -1,4 +1,10 @@
 {
+  "name": "Name",
+  "email": "Email",
+  "password": "Password",
+  "Name": "Name",
+  "Email": "Email",
+  "Password": "Password",
   "Hero": {
     "title": "Der beste Online-Shop der Welt für Laptops und Macbooks",
     "ctaButton": "Jetzt kaufen"

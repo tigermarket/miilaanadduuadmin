@@ -1,7 +1,6 @@
-import { logger } from "@/lib/lgger";
 import mongoose from "mongoose";
 
-const MONGODB_URI: string = process.env.MONGODB_URI as string;
+const MONGODB_URI: string = process.env.MONGODB_UI as string;
 
 if (!MONGODB_URI) {
   console.log("Invalid/Missing environment variable", MONGODB_URI);
@@ -25,7 +24,6 @@ const cached = globalWithMongoose._mongooseClient;
 
 export async function connectedToMongodb(): Promise<typeof mongoose> {
   if (cached.conn) {
-    console.log("cached exists");
     return cached.conn;
   }
 
@@ -41,9 +39,10 @@ export async function connectedToMongodb(): Promise<typeof mongoose> {
     console.log("Connection successful");
     return cached.conn;
   } catch (error) {
+    console.log(error);
     console.log("Not connected successfulyt");
     cached.promise = null;
-    logger.error("MongoDB connection failed:", error);
+    // logger.error("MongoDB connection failed:", error);
     throw new Error("Failed to connect to MongoDB");
   }
 }

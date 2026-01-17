@@ -3,9 +3,14 @@ import Image from "next/image";
 import { Text } from "../components/adduwebui";
 import LanguageSwitcher from "@/components/settings/Language";
 import SignIn from "@/components/authenthication/SignIn";
+import { SignUp } from "@/components";
+import { redirect } from "next/navigation";
+import { getSession, login, logout } from "@/(server)/lib";
 
 export default async function LoginPage() {
   const t = await getTranslations("Product");
+
+  const session = await getSession();
   return (
     <div className="relative h-screen">
       <Image
@@ -19,7 +24,7 @@ export default async function LoginPage() {
       <div className="absolute inset-0 bg-black/25 -z-5" />
 
       <div className="flex items-center justify-center h-full">
-        <SignIn />
+        <SignUp />
       </div>
     </div>
   );

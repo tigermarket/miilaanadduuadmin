@@ -121,6 +121,7 @@ import { useInternalTheme } from "../../core/theming";
 import type { ThemeProp, MD3Type } from "../../types";
 import { forwardRef } from "../../utils/forwardRef";
 import type { VariantProp } from "./types";
+import { useTranslations } from "next-intl";
 type HTMLElementTag =
   | "span"
   | "p"
@@ -199,7 +200,8 @@ const TextImpl = (
   }
 
   const variantStyle = toCssFromMD3Type(font);
-
+  const t = useTranslations();
+  const content = typeof children === "string" ? t(children) : children;
   return (
     <Component
       // ref={root}
@@ -215,7 +217,7 @@ const TextImpl = (
       {...rest}
       className="text-red-600 font-semibold text-lg"
     >
-      {children}
+      {content}
     </Component>
   );
 };

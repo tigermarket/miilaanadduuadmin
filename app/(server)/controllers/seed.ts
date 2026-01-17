@@ -3,6 +3,7 @@ import bcrypt from "bcrypt";
 import { Customer, Invoice, Revenue, User } from "../models/Seed";
 import { customers, invoices, revenue, users } from "../utils/placeholder-data";
 import { connectedToMongodb } from "../startup/db";
+
 export default {
   seedUsers: async () => {
     try {

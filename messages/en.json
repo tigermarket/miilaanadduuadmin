@@ -1,7 +1,26 @@
 {
+  "name": "Name",
+  "email": "Email",
+  "password": "Password",
+  "Name": "Name",
+  "Email": "Email",
+  "Password": "Password",
+  "language": "Perfect stuff here",
   "Hero": {
     "title": "The best world online store for laptops and macbooks",
     "ctaButton": "Shop Now"
+  },
+  "Commerce": {
+    "Miilcom": "Miilcom",
+    "Links": {
+      "Dashboard": "Dashboard",
+      "Products": "Products",
+      "Flash sales": "Flash sales",
+      "Customers": "Customers",
+      "Orders": "Orders",
+      "Reports": "Reports",
+      "Settings": "Settings"
+    }
   },
 
   "Product": {
